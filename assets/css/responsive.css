@@ -1,0 +1,314 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+.stellarnav > ul > li > a {
+	padding: 6px 7px !important;
+
+}
+	
+.home-slide-item {
+	margin-top: 0 !important;
+}
+
+.date ul li {
+	margin-right: 10px !important;
+}
+	
+.stellarnav ul {
+	text-align: left !important;
+}
+	
+.select {
+	padding: 19px 5px !important;
+}
+	
+form.example_1 input[type="text"] {
+	width: 42% !important;
+}	
+	
+form.example_1 button {
+	width: 35% !important;
+}	
+	
+.pricingContent ul li {
+	margin-left: 11px !important;
+}
+	
+.pricingContent i {
+	margin-right: 3px !important;
+}	
+	
+	
+	
+	
+.footer-title {
+	font-size: 18px !important;
+	border-radius: 60% 0% !important;
+}
+	
+	
+	
+/*================ single page start ===========*/
+.single-recent-item {
+	font-size: 18px !important;
+}
+
+.single-recent-image img {
+	width: 100% !important;
+	margin-right: 0 !important;
+}
+	
+.single-tag-title {
+	font-size: 19px !important;
+}
+	
+.tag ul li a {
+	font-size: 14px !important;
+}
+	
+
+	
+	
+	
+	
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+.date {
+	text-align: center !important;
+}	
+
+.top-header-social {
+	text-align: center !important;
+	margin-top: 10px !important;
+	margin-bottom: 7px !important;
+}	
+	
+	
+	
+	
+    
+ /*============ Menu css start==============*/
+    
+
+.logo img {
+	width: 70% !important;
+ }
+	
+    
+.stellarnav.mobile {
+	text-align: right !important;
+	margin-top: -57px !important;
+	margin-left: -14px !important;
+	position: absolute;
+}
+	
+.stellarnav .full {
+	width: 0 !important;
+}
+  
+.stellarnav.dark .menu-toggle span.bars span {
+	background: #514949;
+}
+
+ .stellarnav.mobile li a {
+	color: #fff !important;
+}   
+
+.stellarnav.mobile.dark ul {
+	background: #009333 !important;
+}
+    
+
+
+.stellarnav.dark li a:hover {
+	color: #fff !important;
+}
+.stellarnav.mobile {
+	background: #009333 !important;
+}
+
+.header-section {
+	background: #009333 !important;
+}
+	
+.stellarnav.dark {
+	background: transparent !important;
+}
+    
+.stellarnav .menu-toggle span.bars span {
+	width: 27px !important;
+	height: 3px !important;
+	margin: 0 0 5px !important;
+}
+
+	
+.stellarnav .menu-toggle span.bars {
+	top: 4px !important;
+	left: -35px !important;
+}
+	
+.stellarnav.dark .menu-toggle span.bars span {
+	background: #fff;
+}
+   
+ /*============ Menu css End==============*/
+	
+	
+	
+	
+ /*============ Home Slide  css start==============*/
+.home-page-slide {
+	padding: 50px 0 !important;
+}
+	
+.home-slide-item {
+	margin-top: -271px !important;
+	margin-left: 30px;
+}
+	
+.home-slide-title {
+	font-size: 25px !important;
+}	
+.home-slide-list .owl-dots {
+	left: 30% !important;
+}
+
+	
+ /*============ Home Slide  css End==============*/
+ form.example_1 input[type="text"] {
+	font-size: 14px;
+	width: 36% !important;
+}
+	
+form.example_1 button {
+	padding: 16px 2px !important;
+	width: 39% !important;
+	font-size: 14px !important;
+}
+	
+.select {
+	padding: 19px 2px !important;
+}
+	
+	
+/*==================== services section start ======================*/
+.themesbazar_services_content {
+	column-count: 2 !important;
+	column-gap: 10px !important;
+}
+	
+.themesbazar_services_wrpp {
+	padding: 9px !important;
+	margin-bottom: 9px !important;
+}	
+.services_title a {
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	padding: 2px 0 8px 0 !important;
+}	
+  	
+/*==================== services section End ======================*/	
+	
+/*=============Notic section ==============*/
+.notic_section {
+	margin: 0 !important;
+}
+	
+	
+.pricing_contnet {
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1 !important;
+
+}	
+	
+.testmonial-list .owl-dots {
+	left: 25% !important;
+}	
+
+	
+	
+.portfolio-list .owl-dots {
+	left: 21% !important;
+	bottom: -25px !important;
+}
+
+.latest-list .owl-dots {
+	left: 20% !important;
+	bottom: -25px !important;
+}	
+
+.footer-title {
+	border-radius: 60% 0% !important;
+}
+	
+.footer-wrpp {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}	
+	
+	
+.copy-right {
+	text-align: center !important;
+}
+	
+.design-developed {
+	text-align: center !important;
+}	
+	
+/*page css*/
+.latest-page-content {
+	column-count: 1 !important;
+}
+	
+		
+	
+	
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+ form.example_1 input[type="text"] {
+	width: 52% !important;
+}
+	
+form.example_1 button {
+	width: 30% !important;
+}
+	
+.pricing_contnet {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2 !important;
+}
+	
+.testmonial-list .owl-dots {
+	left: 35% !important;
+}	
+
+.portfolio-list .owl-dots {
+	left: 35% !important;
+}
+	
+.latest-list .owl-dots {
+	left: 35% !important;
+}
+	
+	
+/*page css*/
+.latest-page-content {
+	column-count: 2 !important;
+}
+	
+	
+	
+	
+}

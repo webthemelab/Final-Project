@@ -1,0 +1,1459 @@
+/* Base CSS */
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'SolaimanLipiNormal';
+    src: url('fonts/solaiman-lipi.eot');
+    src: url('fonts/solaiman-lipi.eot') format('embedded-opentype'),
+         url('fonts/solaiman-lipi.woff') format('woff'),
+         url('fonts/solaiman-lipi.ttf') format('truetype'),
+         url('fonts/solaiman-lipi.svg#SolaimanLipiNormal') format('svg');
+	
+	font-weight:normal;font-style:normal;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+body {
+    font-size: 14px;
+	width:100%;
+    font-family: 'Rubik', sans-serif;
+    background: #fff;
+}
+a:hover { text-decoration: none }
+
+
+/*======== container update =======*/
+/*
+.container {
+	max-width: 1280px;
+}
+*/
+
+
+
+                /*======================================
+                    Top-Header Section css-Start
+                ======================================*/
+.top-header {
+	background: #333;
+	padding: 10px 0;
+}
+
+.date {
+	margin-top: 5px;
+}
+
+.date ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.date ul li {
+	display: inline-block;
+	color: #ddd;
+	margin-right: 30px;
+}
+
+
+.top-header-social {
+	text-align: right;
+}
+
+.top-header-social ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.top-header-social ul li {
+	display: inline-block;
+    transition: .5s all;
+}
+
+.top-header-social ul li a {
+	display: inline-block;
+	color: #2DBE60;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #333333;
+	border-radius: 50%;
+	box-shadow: 0 0 3px #2DBE60;
+	transition: .8s all;
+	line-height: 30px;
+	margin-right: 10px;
+}
+
+.top-header-social ul li:hover i {
+    transform: rotate(360deg);
+    transition: .5s all;
+}
+
+
+.date i {
+	color: #0ea844;
+	margin-right: 3px;
+}
+
+               
+
+                /*======================================
+                    Top-Header Section css-End
+                ======================================*/
+
+
+
+               
+
+                /*======================================
+                    Menu Section css-Start
+                ======================================*/
+.logo {
+	margin-top: 10px;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+.header-section {
+	background: #fff;
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+}
+
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	-webkit-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+	box-shadow: 0 0 10px #333;
+}
+
+
+                /*======================================
+                        Logo & Menu Section css-End
+                ======================================*/
+
+
+
+
+
+                /*======================================
+                       Home Slide Section css-start
+                ======================================*/
+.home-page-slide {
+	background-color: #0ea844;
+	background-image: url(assets/images/all.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 90px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page-slide::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 30, 30, 0.4);
+}
+
+.home-slide-item {
+	margin-top: 50px;
+}
+
+.home-slide-title {
+	font-size: 35px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.home-slide-content {
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 43px;
+	color: #fff;
+	line-height: 25px;
+}
+
+.home-slide-btn a {
+	display: inline-block;
+	background: transparent;
+	padding: 11px 40px;
+	font-size: 16px;
+	text-decoration: none;
+	border: 1px solid #0ea844;
+	color: #fff;
+	font-weight: 400;
+	border-radius: 50px;
+    transition: .8s all;
+}
+
+.home-slide-btn a:hover{
+    background: #0ea844;
+    
+}
+
+
+
+.home-slide-list button.owl-prev {
+	background: rgba(255,255,255,0.20);
+	position: absolute;
+	left: 0;
+	top: 40%;
+	z-index: 999;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #0ea844;
+	font-size: 40px;
+	line-height: 51px;
+	padding-right: 12px;
+	opacity: 0;
+	visibility: hidden;
+    transition: .8s all
+}
+.home-slide-list:hover button.owl-prev{
+    opacity: 1;
+    visibility: visible;
+ }
+
+.home-slide-list button.owl-next {
+	background: rgba(255,255,255,0.20);
+	position: absolute;
+	right: 0;
+	top: 40%;
+	z-index: 999;
+	width: 50px;
+	height: 50px;
+	color: #0ea844;
+    font-size: 40px;
+	line-height: 51px;
+	padding-left: 10px;
+   	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+    transition: .8s all;
+}
+
+.home-slide-list:hover button.owl-next{
+    opacity: 1;
+    visibility: visible;
+ }
+
+.home-slide-list button:focus {
+	outline: 1px transparent;
+}
+
+.home-slide-list .owl-dots button {
+	margin: 0 4px;
+	padding: 4px;
+	border: 2px solid #0ea844;
+	transition: .8s all;
+	background: transparent;
+     border-radius: 50px;
+}
+
+
+.home-slide-list .owl-dots button.active{
+    background: #fff;
+    transform: rotate(30deg) scale(1.4);
+    box-shadow: 0 0 3px #333;
+    border-radius: 50px;
+}
+
+
+
+.home-slide-list .owl-dots {
+	text-align: center;
+	position: absolute;
+	left: 45%;
+	bottom: -38px;
+	content: "";
+	z-index: 1;
+}
+
+
+                /*======================================
+                        Home Slide Section css-End
+                ======================================*/
+
+
+
+
+                /*======================================
+                        Domain Section css-start
+                ======================================*/
+.themesbazar_domain_section {
+	background: #009333;
+	padding: 40px 0;
+}
+
+.domain_titile {
+	font-size: 26px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 15px;
+}
+
+.domain_pay {
+	font-size: 16px;
+	font-weight: 300;
+	color: #ddd;
+}
+
+
+form.example_1 {
+	margin-top: 16px;
+}
+
+
+form.example_1 input[type="text"] {
+	padding: 17px 10px;
+	font-size: 16px;
+	border-right: 2px solid #0EA844;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+	float: left;
+	width: 53%;
+	background: #fff;
+	margin-top: 3px;
+}
+
+.select {
+	padding: 19px 10px;
+	background: #fff;
+	color: #000;
+	border: none;
+	font-size: 15px;
+	margin-top: 3px;
+}
+
+form.example_1 button {
+	padding: 16px 0;
+	width: 25%;
+	background: transparent;
+	color: #fff;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	border: none;
+	-webkit-transition: .8s;
+	-o-transition: .8s;
+	transition: .8s;
+	margin-top: 0;
+	border: 2px solid #abc1b3;
+}
+
+
+
+                /*======================================
+                        Domain Section css-End
+                ======================================*/
+
+
+
+
+                /*======================================
+                        Services Section css-Start
+                ======================================*/
+.themesbazar_services_section {
+	padding: 50px 0;
+}
+
+.services_sec_item {
+	text-align: center;
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+
+.services_sec_title {
+	font-size: 30px;
+	font-weight: 600;
+	color: #000;
+}
+
+.services_sec_sub {
+	font-size: 16px;
+	font-weight: 300;
+	color: #333;
+	margin-bottom: 2px;
+}
+
+.themesbazar_services_content {
+	-webkit-column-count: 3;
+	   -moz-column-count: 3;
+	        column-count: 3;
+	-webkit-column-gap: 20px;
+	   -moz-column-gap: 20px;
+	        column-gap: 20px;
+}
+
+.themesbazar_services_wrpp {
+	display: inline-block;
+	width: 100%;
+	box-shadow: 0 0 10px#eee;
+	padding: 15px;
+	margin-bottom: 20px;
+    transition: .8s all;
+}
+
+
+.services_image {
+	text-align: center;
+}
+
+.services_image img {
+	width: 38%;
+	height: auto;
+}
+
+.services_item {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.services_title a {
+	font-size: 20px;
+	color: #000;
+	font-weight: 300;
+	padding: 2px 0 10px 0;
+	display: inline-block;
+    transition: .8s all;
+}
+
+.services_title a:hover{
+    color: #009333;
+}
+
+.services_content {
+	font-size: 16px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	line-height: 23px;
+}
+
+.services_button {
+	padding: 15px 0;
+}
+
+.services_button a {
+	border: 2px solid #eee;
+	padding: 6px 18px;
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	font-weight: 300;
+    transition: .8s all;
+}
+.themesbazar_services_wrpp:hover .services_button a{
+    color: #f00;
+    font-weight: 500;
+}
+
+.themesbazar_services_wrpp:hover{
+    box-shadow: 0 10px 5px#eee;
+}
+
+
+                /*======================================
+                        Services Section css-End
+                ======================================*/
+
+
+                /*======================================
+                        Notic Section css-start
+                ======================================*/
+.notic_section {
+	background: #009333;
+	padding: 40px 0;
+	margin: 40px 0;
+}
+
+.notic_title {
+	font-size: 30px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 36px;
+	margin-top: 20px;
+	margin-bottom: 22px;
+}
+
+.notic-image img {
+	width: 100%;
+	height: auto;
+}
+
+.notic_content {
+	font-size: 16px;
+	color: #fff;
+	line-height: 25px;
+	margin-bottom: 25px;
+}
+
+.notic_button a {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: 12px 30px;
+	color: #fff;
+	font-size: 18px;
+}
+
+
+                /*======================================
+                        Notic Section css-End
+                ======================================*/
+
+
+
+                /*======================================
+                        Pricing Section css-start
+                ======================================*/
+.price-value {
+	/*	background: linear-gradient(135deg,#4097f9,#0af0c7);*/
+	padding: 20px 30px;
+	text-align: center;
+    background: #009333;
+}
+
+.amount {
+	font-size: 50px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.time {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+	margin-left: -4px;
+}
+
+
+.pricing_contnet {
+	-webkit-column-count: 4;
+	   -moz-column-count: 4;
+	        column-count: 4;
+	-webkit-column-gap: 20px;
+	   -moz-column-gap: 20px;
+	        column-gap: 20px;
+}
+
+.pricing_wrpp {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #009333;
+	border-radius: 11px 11px 0 0;
+	transition: .8s all;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	break-inside: avoid;
+	
+}
+
+.pricing_wrpp:hover {
+	box-shadow: 0 7px 10px #ddd;
+	border: 1px solid #0bf2cc;
+}
+
+.scallop-up {
+	height: 50px;
+	width: 100%;
+	background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#009333), color-stop(0.49, #009333), color-stop(0.51, #fff), to(white));
+	-webkit-background-size: 30px 100%;
+}
+
+.basic {
+	text-align: left;
+	font-weight: 600;
+	color: #fff;
+	font-size: 16px;
+}
+
+.pricingContent ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.pricingContent ul li {
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 30px;
+	padding-bottom: 10px;
+}
+
+.pricingContent i {
+	font-size: 14px;
+	margin-right: 9px;
+	color: #009333;
+}
+
+.pricingTable-signUp {
+	text-align: center;
+	padding: 20px 0 25px 0;
+}
+
+.pricingTable-signUp a {
+	display: inline-block;
+	background: linear-gradient(135deg,#4097f9,#0af0c7);
+	text-align: center;
+	padding: 10px 26px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+
+                /*======================================
+                        Pricing Section css-End
+                ======================================*/
+
+
+
+                /*======================================
+                        discount Section css-start
+                ======================================*/
+.discount_section {
+	background-image: url(assets/images/all.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+	background-attachment: fixed;
+	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+	margin: 40px 0;
+}
+
+.discount_section::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 30, 30, 0.4);
+}
+
+.dis_title1 {
+	font-size: 25px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.dis_title {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.discount_contnet {
+	margin-top: 40px;
+}
+
+
+.discount_contnet ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.discount_contnet ul li {
+	margin-bottom: 10px;
+	font-size: 17px;
+	color: #fff;
+	font-weight: 300;
+	padding-bottom: 10px;
+}
+
+.discount_contnet i {
+	width: 35px;
+	height: 35px;
+	line-height: 32px;
+	border: 2px solid #fff;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+
+                /*======================================
+                        discount Section css-End
+                ======================================*/
+
+
+
+                /*======================================
+                        discount Section css-End
+                ======================================*/
+.testmonial-image img {
+	max-width: 40%;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.testmonial-title {
+	font-size: 20px;
+	color: #000;
+	margin-top: 10px;
+    font-weight: 600;
+}
+
+.testmonial-wrpp {
+	text-align: center;
+}
+
+.testmonial-content {
+	text-align: justify;
+	margin-top: 10px;
+	color: #000;
+	font-size: 14px;
+}
+.testmonial-list .owl-dots {
+	text-align: center;
+	position: absolute;
+	left: 45%;
+	bottom: -38px;
+	content: "";
+	z-index: 1;
+}
+
+.testmonial-list .owl-dots button {
+	margin: 0 4px;
+	padding: 3px;
+	border: 2px solid #0ea844;
+	transition: .8s all;
+	background: transparent;
+	border-radius: 50px;
+}
+
+.testmonial-list .owl-dots button.active {
+	background: #fff;
+	transform: scale(1.4);
+	box-shadow: 0 0 2px #333;
+
+}
+
+
+                /*======================================
+                        discount Section css-End
+                ======================================*/
+
+
+
+                /*======================================
+                        portfolio Section css-start
+                ======================================*/
+.portfolio-section {
+	padding: 80px 0;
+}
+
+.portfolio-image {
+	border: 2px solid #fff;
+	box-shadow: 0 0 4px #ddd;
+	margin: 5px 0;
+}
+
+.portfolio-list .owl-dots {
+	text-align: center;
+	position: absolute;
+	left: 45%;
+	bottom: -38px;
+	content: "";
+	z-index: 1;
+}
+
+.portfolio-list .owl-dots button {
+	margin: 0 4px;
+	padding: 3px;
+	border: 2px solid #0ea844;
+	transition: .8s all;
+	background: transparent;
+	border-radius: 50px;
+}
+
+.portfolio-list .owl-dots button.active {
+	background: #fff;
+	transform: scale(1.4);
+	box-shadow: 0 0 2px #333;
+
+}
+
+                /*======================================
+                        portfolio Section css-End
+                ======================================*/
+
+
+
+
+                /*======================================
+                        Latset Section css-start
+                ======================================*/
+.latest-section {
+	padding: 16px 0 66px;
+}
+
+.latest-wrpp {
+	padding: 7px;
+	box-shadow: 0 0 6px #ddd;
+	margin: 10px 4px 5px 5px;
+}
+
+.latest-image {
+	position: relative;
+	overflow: hidden;
+}
+.latest-image img {
+	width: 100%;
+	height: auto;
+	transition: .8s all;
+}
+
+.latest-wrpp:hover .latest-image img {
+	position: relative;
+	transform: scale(1.3);
+	z-index: 20;
+}
+
+
+.latest-title a {
+	font-size: 20px;
+	display: inline-block;
+	line-height: 24px;
+	padding: 10px 0;
+	color: #000;
+	font-weight: 500;
+}
+
+.latest-content {
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: justify;
+	padding: 5px 0;
+	line-height: 26px;
+}
+
+.latest-btn {
+	margin: 26px 0 8px 0;
+}
+
+.latest-btn a {
+	display: inline-block;
+	border: 2px solid #a4a4a4;
+	padding: 5px 23px;
+	font-size: 16px;
+	color: #28282899;
+	transition: .8s all;
+}
+
+.latest-wrpp:hover .latest-btn a{
+	color: #009333;
+	border: 2px solid #009333;
+}
+
+.latest-list .owl-dots {
+	text-align: center;
+	position: absolute;
+	left: 45%;
+	bottom: -38px;
+	content: "";
+	z-index: 1;
+}
+
+.latest-list .owl-dots button {
+	margin: 0 4px;
+	padding: 3px;
+	border: 2px solid #0ea844;
+	transition: .8s all;
+	background: transparent;
+	border-radius: 50px;
+}
+
+.latest-list .owl-dots button.active {
+	background: #fff;
+	transform: scale(1.4);
+	box-shadow: 0 0 2px #333;
+
+}
+
+
+                /*======================================
+                        Latset Section css-End
+                ======================================*/
+
+
+
+/*--------- bottom footer css-start---------------*/
+
+.footer-section {
+	background: #1c1c1c;
+	padding: 40px 0;
+	margin: 50px 0 0;
+}
+
+.footer-logo img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+
+.footer-content {
+	font-size: 15px;
+	text-align: justify;
+	color: #fff;
+}
+
+.footer-menu-content {
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+	        column-count: 2;
+	-webkit-column-gap: 15px;
+	   -moz-column-gap: 15px;
+	        column-gap: 15px;
+}
+
+.footer-wrpp {
+	overflow: hidden;
+	width: 100%;
+}
+
+
+.footer-title {
+	font-size: 22px;
+	font-weight: 600;
+	color: #fff;
+	border-bottom: 2px solid #0ea844;
+	border-radius: 100% 0%;
+	margin-bottom: 25px;
+}
+
+.footer-menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-menu ul li {
+	border-bottom: 1px solid #333;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.footer-menu ul li a {
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	transition: .8s all;
+}
+
+.footer-menu ul li a:hover{
+	color: #009333;
+	padding-left: 5px;
+	font-style: italic;
+}
+
+
+/*bottom footer*/
+.bottom-footer-section {
+	background: #1c1c1c;
+	padding: 18px 0;
+	border-top: 1px solid #333;
+}
+
+.copy-right{
+    font-size: 16px;
+    color:#fff;
+}
+
+
+.design-developed {
+	text-align: right;
+	font-size: 16px;
+	color: #fff;
+}
+
+.design-developed a {
+	color: #0ea844;
+	font-weight: 600;
+}
+
+.scrollToTop {
+	width: 42px;
+	height: 52px;
+	padding: 10px;
+	background: #009333;
+	position: fixed;
+	right: 25px;
+	bottom: 70px;
+	z-index: 9999;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.scrollToTop i.fas {
+	font-size: 26px;
+	color: #fff;
+	font-weight: 600;
+	top: 15px;
+	display: block;
+	position: absolute;
+	right: 15px;
+}
+ /*--------- bottom footer css-End---------------*/
+
+                
+                /*======================================
+                        footer-section css-End
+                ======================================*/
+
+
+
+/*===============All Page css Start============*/
+.all-page {
+	background-image: url(assets/images/all.jpg);
+	background-color: #ddd;
+	background-size: cover;
+	background-position: center;
+	padding: 80px 0;
+	background-attachment: fixed;
+}
+
+
+.all-title {
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.all-content {
+	margin-bottom: 30px;
+}
+.active {
+	color: #08e354 !important;
+}
+
+.all-content ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.all-content ul li {
+	display: inline-block;
+}
+
+.all-content ul li a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/*===============All Page css End============*/
+
+/*===============About Page css start============*/
+.about-page {
+	padding: 50px 0;
+}
+
+.about-title {
+	font-size: 30px;
+	font-weight: 600;
+	color: #000;
+}
+
+.about-content {
+	text-align: justify;
+	font-size: 16px;
+	line-height: 27px;
+	color: #5e5e60;
+	margin-top: 10px;
+}
+
+/*===============About Page css End============*/
+
+
+/*===============Blog Page css start============*/
+.blog-page {
+	margin: 50px 0;
+}
+
+.latest-page-content {
+	column-count: 3;
+	column-gap: 20px;
+}
+
+.latest-pae-wrpp {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+	transition: .8s all;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	break-inside: avoid;
+	padding: 7px;
+	box-shadow: 0 0 6px #ddd;
+	
+}
+
+
+/*===============Blog Page css End============*/
+
+
+/*===============Domain Page css Start============*/
+.domain-page {
+	background-image: url(assets/images/domain.jpg);
+	background-color: #ddd;
+	background-size: cover;
+	background-position: center;
+	padding: 80px 0;
+	background-attachment: fixed;
+}
+
+form.example_2 input[type="text"] {
+	padding: 17px 10px;
+	font-size: 16px;
+	border: 1.5px solid #fff;
+	border-right: transparent;
+	float: left;
+	width: 53%;
+	background: transparent;
+	margin-top: 4px;
+	color: #fff;
+	border-radius: 4px 0 0 4px;
+}
+
+
+.example_2 .select {
+	padding: 19px 20px;
+	background: transparent;
+	color: #fff;
+	border: 1.5px solid #fff;
+	font-size: 15px;
+	margin-top: 4px;
+	border-left: transparent;
+	border-radius: 0 4px 4px 0;
+}
+
+
+form.example_2 button {
+	padding: 15px 15px;
+	background: #009333;
+	color: #fff;
+	font-size: 19px;
+	border: none;
+}
+
+/*===============Domain Page css End============*/
+
+
+
+
+/*===========Single-page css Start==================*/
+.single-page {
+	padding: 50px 0;
+}
+
+.single-page-date {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.single-page-date ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.single-page-date ul li a {
+	color: #807e7e;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.single-page-date ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
+.single-page-date i {
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+.single-page-title {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 13px;
+	color: #01284F;
+	margin-top: 12px;
+}
+
+.single-page-image img {
+	width: 100%;
+	height: auto;
+
+}
+
+.single-page-content {
+	text-align: justify;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #000;
+}
+
+
+
+
+.single-page-categori {
+	-webkit-box-shadow: 0 0 10px #eee;
+	        box-shadow: 0 0 10px #eee;
+	padding: 10px;
+	
+}
+
+.single-category-title {
+	font-size: 25px;
+	font-weight: 600;
+	color: #01284f;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.single-category-title::before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: "";
+	width: 40px;
+	height: 3px;
+	background: #009333;
+}
+
+.single-recent-post {
+	-webkit-box-shadow: 0 0 10px #eee;
+	        box-shadow: 0 0 10px #eee;
+	padding: 10px;
+/*	margin-top: 30px;*/
+}
+
+.single-recent-item {
+	font-size: 25px;
+	font-weight: 600;
+	color: #01284f;
+	position: relative;
+}
+
+.single-recent-item::before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: "";
+	width: 40px;
+	height: 3px;
+	background: #009333;
+}
+
+.single-recent-content {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.single-recent-image img {
+	width: 40%;
+	height: auto;
+	margin-right: 10px;
+	float: left;
+}
+
+.single-recent-date {
+	font-size: 12px;
+	font-weight: 300;
+	color: #797979;
+}
+
+.single-recent-title a {
+	color: #000;
+	font-weight: 500;
+	line-height: ;
+	text-decoration: none;
+	-webkit-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+}
+
+.single-recent-title a:hover {
+	color: #009333;
+}
+
+.single-page-tag {
+	-webkit-box-shadow: 0 0 10px #eee;
+	        box-shadow: 0 0 10px #eee;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.single-tag-title {
+	font-size: 25px;
+	font-weight: 600;
+	color: #01284f;
+	position: relative;
+    margin-bottom: 20px;
+}
+
+.single-tag-title::before {
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	content: "";
+	width: 38px;
+	height: 3px;
+	background: #009333;
+}
+
+
+.tag ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.tag ul li {
+	display: inline-block;
+	
+	margin-bottom: 10px;
+	margin-right: 5px;
+	-webkit-transition: .8s all;
+	-o-transition: .8s all;
+	transition: .8s all;
+}
+
+
+.tag ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #ddd;
+	padding: 5px 10px;
+    display: inline-block;
+    transition: .5s all;
+}
+
+
+.tag ul li a:hover {
+	background: #009333;
+	border: 1px solid #009333;
+	color: #fff;
+}
+
+
+/*===========Single-page css End==================*/
+
+
+
+
+
+
+/*===============404/Error Page css End============*/
+.error-wrpp {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.error-title {
+	font-size: 130px;
+	font-weight: bold;
+	letter-spacing: 7px;
+	margin-bottom: 0;
+	-webkit-text-stroke: 3px #01284F;
+	-webkit-text-fill-color: #fff;
+	-webkit-animation: fill 0.6s infinite alternate;
+}
+
+@-webkit-keyframes fill {
+  from { -webkit-text-fill-color: #9A1515; }
+  to { -webkit-text-fill-color: #01284F; }
+}
+
+.error-page-sub {
+	font-size: 40px;
+	margin-top: -20px;
+	font-weight: 600;
+	color: #535151;
+}
+
+.error-page-item {
+	font-size: 25px;
+	letter-spacing: 0.5px;
+	color: #000;
+}
+
+.error-btn {
+	margin-top: 40px;
+}
+
+.error-btn a {
+	background: #01284F;
+	padding: 10px 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 2px;
+	transition: .8s all;
+}
+
+.error-btn a:hover{
+    padding: 10px 40px;
+    letter-spacing: 2px;
+    color: #ff0;
+}
+/*===============404/Error Page css End============*/
